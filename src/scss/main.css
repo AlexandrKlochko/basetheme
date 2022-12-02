@@ -1,0 +1,23 @@
+header {
+  background: red;
+  height: 100px;
+  padding: 50px; }
+
+header {
+  background: red;
+  height: 100px;
+  padding: 50px; }
+
+body {
+  background: #16994d;
+  color: blue;
+  font-size: 16px;
+  font-family: Tahoma;
+  border: none;
+  margin-top: 15px; }
+  body h3 {
+    margin-top: 5px; }
+    body h3 span {
+      color: #801d34; }
+
+/*# sourceMappingURL=main.css.map */

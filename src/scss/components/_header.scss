@@ -1,0 +1,38 @@
+.admin-bar header {
+  @media (min-width: 601px) {
+    top: 32px;
+    @media (max-width: 782px) {
+      top: 46px;
+    }
+  }
+}
+
+header {
+  background: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  nav.navbar-dark {
+    ul:not(.dropdown-menu) {
+      & > li {
+        & > a.nav-link {
+          color: #ffffff;
+          animation: 3s linear ;
+          &:after{
+            display: block;
+            content: "";
+            width: 0;
+            -webkit-transition: all .1s ease 0s;
+            transition: all 1s ease 0s;
+            height: 1px;
+            background-color: rgb( 251, 65, 78 );
+          }
+          &:hover:after{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
