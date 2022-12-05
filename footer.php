@@ -14,7 +14,7 @@
             <?php if ($form = get_field('newsletters_form', 'option')): ?>
                 <div class="col-md-6 col-12 text-white text-md-right px-0">
                     <div class="col-12">
-                        <h5><?php _e('Subscribe to our newsletters','_simpletheme') ?></h5>
+                        <h5><?php _e('Subscribe to our newsletters', '_simpletheme') ?></h5>
                     </div>
                     <div class="col-12 py-2">
                         <?php echo $form ?>
@@ -23,8 +23,8 @@
             <?php endif; ?>
         </div>
         <div class="row pt-4 text-center">
-            <?php if (have_rows('social_icons', 'option')): ?>
-                <div class="col-md-6 col-12 text-danger text-md-left px-0 py-2 d-flex">
+            <div class="col-md-6 col-12 text-danger text-md-left px-0 py-2 d-flex">
+                <?php if (have_rows('social_icons', 'option')): ?>
                     <?php while (have_rows('social_icons', 'option')): the_row(); ?>
                         <?php $icon = get_sub_field('icon');
                         $link = get_sub_field('link'); ?>
@@ -34,11 +34,11 @@
                             </a>
                         </div>
                     <?php endwhile ?>
-                </div>
-            <?php endif; ?>
+                <?php endif; ?>
+            </div>
             <div class="col-md-6 col-12 text-white text-md-right px-0  pt-2">
                 <div class="col-12">
-                    <?php _e('© ','_simpletheme')?> <?php echo date('Y')?><?php _e('. All rights reserved.','_simpletheme') ?> <?php echo bloginfo('name')?>
+                    <?php _e('© ', '_simpletheme') ?><?php echo date('Y') ?><?php _e('. All rights reserved.', '_simpletheme') ?><?php echo bloginfo('name') ?>
                 </div>
             </div>
         </div>

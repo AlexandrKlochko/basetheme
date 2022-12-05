@@ -1,6 +1,5 @@
 
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -59,9 +58,6 @@ let conf = {
                         inline: true
                     }
                 }
-            }),
-            new UglifyJsPlugin({
-                sourceMap: true,
             })
         ],
     },
